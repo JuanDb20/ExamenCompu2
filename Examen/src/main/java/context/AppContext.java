@@ -2,8 +2,7 @@ package context;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-// Singleton del IoC Container.
-// Spring crea todos los beans al iniciar.
+
 
 public class AppContext {
 

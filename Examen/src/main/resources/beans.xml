@@ -3,5 +3,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
- 
+    <!-- Repositories, Intyeccion dependencias -->
+
+    <bean id="deviceRepository"
+          class="repository.DeviceRepository"/>
+
+
+
+
+    <!-- Services -->
+    <bean id="measurementRepository"
+          class="repository.MeasurementRepository"/>
+
+
+    <bean id="measurementService"
+          class="service.MeasurementService">
+        <constructor-arg ref="measurementRepository"/>
+    </bean>
+
 </beans>
